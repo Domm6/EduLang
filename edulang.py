@@ -14,7 +14,6 @@ class EduLangInterpreter:
         self.score = 0  # Initialize score
         self.total_attempts = 0  # Total questions attempted
 
-
     def interpret(self, model):
         # Process the timer declaration
         if model.timer:
@@ -98,7 +97,8 @@ class EduLangInterpreter:
             elif choice == "2":
                 if self.total_attempts > 0:
                     percentage = (self.score / self.total_attempts) * 100
-                    print(f"Your current score is: {self.score}/{self.total_attempts} ({percentage:.2f}%)")
+                    print(
+                        f"Your current score is: {self.score}/{self.total_attempts} ({percentage:.2f}%)")
                 else:
                     print("No questions attempted yet.")
             elif choice == "3":
@@ -110,7 +110,6 @@ class EduLangInterpreter:
                 break
             else:
                 print("Invalid option. Please try again.")
-
 
     def display_categories(self):
         print("\nCategories:")
@@ -207,7 +206,8 @@ class EduLangInterpreter:
                 return True
 
             if user_input.lower() == "hint":
-                hints = self.categories[category_name]["hints"].get(question, [])
+                hints = self.categories[category_name]["hints"].get(
+                    question, [])
                 if hints:
                     print(f"Hint: {hints.pop(0)}")
                 else:
@@ -232,7 +232,6 @@ class EduLangInterpreter:
                 timer_thread.cancel()
 
         return False
-
 
 
 # Grammar for EduLang

@@ -1,0 +1,23 @@
+
+# Multiple answers - either Red, Blue, or Yellow are correct
+quiz("What is one of the primary colors?", ["Red", "Blue", "Yellow"])
+
+# Example of a 10 second timer
+Timer = 10
+
+# A Math and History category
+Math {
+    quiz("What is 9 + 10?", ["21"])
+}
+
+History {
+    quiz("Who was the first President of the United States?", ["George Washington"])
+    hint("It starts with a G")
+}
+
+# A definition
+define("Planet", "A large celestial body that orbits a star.")
+
+
+
+

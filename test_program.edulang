@@ -1,4 +1,4 @@
-# 5 second timer for each quiz
+# 15 second timer for each quiz
 Timer = 15
 
 # Wrong answer limit
@@ -15,14 +15,15 @@ showScore
 Science {
 
     define("Photosynthesis", "The process by which plants convert sunlight into energy.")
-
+    define("Atom", "The smallest unit of matter.")
+    
     quiz("What is the process by which plants convert sunlight into energy?", [$process])
     hint("Think about green leaves and sunlight.")
-    hint("Here is another hint")
+    hint("It starts with a P")
 
-    define("Curious", "To think about or wondering about something")
-    quiz("What is the best major", ["Computer Science", "Engineering"])
-    hint("This is an easy one!!! (it starts with a c)")
+    quiz("What is the first element on the periodic table", ["Hydrogen", "H"])
+    hint("It's in water!")
+
 }
 
 History {
