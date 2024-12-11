@@ -1,0 +1,35 @@
+# 5 second timer for each quiz
+Timer = 15
+
+# Wrong answer limit
+Incorrect = 3
+
+# Stored Variables
+let process = "Photosynthesis"
+let year = "1776"
+
+# Commands
+resetScore
+showScore
+
+Science {
+
+    define("Photosynthesis", "The process by which plants convert sunlight into energy.")
+
+    quiz("What is the process by which plants convert sunlight into energy?", [$process])
+    hint("Think about green leaves and sunlight.")
+    hint("Here is another hint")
+
+    define("Curious", "To think about or wondering about something")
+    quiz("What is the best major", ["Computer Science", "Engineering"])
+    hint("This is an easy one!!! (it starts with a c)")
+}
+
+History {
+    quiz("What year did the United States become independent?", [$year, "July 4th"])
+    hint("it was in the 1700's")
+
+    define("soemthing", "The definition goes here!!")
+
+    quiz("What color is the sky?", ["blue", "azure", "cyan"])
+}
