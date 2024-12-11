@@ -3,7 +3,6 @@ Timer = 5
 let process = "Photosynthesis"
 let year = "1776"
 
-Science {
-    quiz("What is the best major", ["Computer Science", "Engineering"])
-    quiz("What is the process of plants getting energy", )
+Math {
+    quiz("What is 2+2 ", ["4", "Four"])
 }
